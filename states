@@ -1,0 +1,39 @@
+public class Main {
+    public static void main(String[] args) {
+
+        TM a = new TM();
+        TM b = new TM();
+
+        AP a1 = new AP();
+        AP b1 = new AP();
+        AP c1 = new AP();
+
+        a.set_dimension("KANCHIPURAM", 20000);
+        b.set_dimension("NAVALUR", 40000);
+
+        a.display();
+        b.display();
+
+        System.out.println("-----------");
+
+        a1.set_dimension("GODHAVARI", 20000);
+        b1.set_dimension("KONASEMMA", 60000);
+        c1.set_dimension("ELURU", 80000);
+
+        a1.display();
+        b1.display();
+        c1.display();
+    }
+}
+
+class TM {
+    static String state = "TAMILNADU";
+    String district;
+    int n;
+
+    public void set_dimension(String a, int b) {
+        district = a;
+        n = b;
+    }
+
+    publ…
