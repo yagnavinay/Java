@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
 
@@ -36,4 +37,34 @@ class TM {
         n = b;
     }
 
-    publ…
+    public void display() {
+        System.out.println("1. PM: " + Common.uni);
+        System.out.println("2. CM: ");
+        System.out.println("3. STATE: " + state);
+        System.out.println("4. District: " + district);
+        System.out.println("5. No. of population: " + n);
+    }
+}
+
+class AP {
+    static String state = "ANDHRA PRADESH";
+    String district;
+    int n;
+
+    public void set_dimension(String a, int b) {
+        district = a;
+        n = b;
+    }
+
+    public void display() {
+        System.out.println("1. PM: " + Common.uni);
+        System.out.println("2. CM: ");
+        System.out.println("3. STATE: " + state);
+        System.out.println("4. District: " + district);
+        System.out.println("5. No. of population: " + n);
+    }
+}
+
+class Common {
+    static String uni = "MODI";
+}
